@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Grid Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+	h1 {
+		font: 48pt/1.4em 'Dancing Script';
+		text-align: center;
+		color: deeppink;
+	} div {
+		width: 800px;
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
+		// border: 1px dashed gray;
+		display: grid;
+		grid-template: auto / auto auto auto;
+	} img {
+		width: 100%;
+	} figure {
+		width: 200px;
+		max-width: 100%;
+	} figcaption {
+		font: 12pt/1.4em 'Roboto Serif';
+		text-align: center;
+	} table {
+		margin: 0 auto;
+		border: 1px solid blue;
+		font: 14pt/1.4em 'Roboto Serif';
+		border-collapse: collapse;
+	} td, th {
+		padding: 6px 18px;
+	} tr:nth-child(even) {
+		background: pink;
+	} @media only screen and (max-width: 850px) {
+		div {
+			width: 100%;
+		} figure {
+			width: 75%;
+		} img {
+			width: 100%;
+		}
+	} @media only screen and (max-width: 750px) {
+	 	div {
+			width: 100%;
+			padding-bottom: 72px;
+			grid-template: repeat(3,auto) / auto;
+		} figure {
+			width: 97%;
+			display: block;
+			margin: 24px auto;
+		} img {
+			width: 100%;
+		}
+	}
+</style>
+</head>
+
+<body>
+	<h1>Grid Portfolio</h1>
+	<div>
+	<figure>
+	<a href="IMG_2153.jpeg">
+	<img src="thumb_IMG_2153.jpeg" />
+	</a>
+	<figcaption>UNLV Premier Artwork</figcaption>
+	</figure>
+	<figure>
+	<a href="IMG_2516.jpeg">
+	<img src="thumb_IMG_2516.jpeg" />
+	</a>
+	<figcaption>Coat for Halloween Costume</figcaption>
+	</figure>
+	<figure>
+	<a href="IMG_6974.png">
+	<img src="thumb_IMG_6974.png" />
+	</a>
+	<figcaption>Drawing of Noelle Holiday</figcaption>
+	</figure>
+	</div>
+	<table>
+		<tr>
+			<th>Artwork Name</th>
+			<th>Medium</th>
+			<th>Year</th>
+		</tr>
+		<tr>
+			<td>UNLV Premier Artwork</td>
+			<td>marker</td>
+			<td>2026</td>
+		</tr>
+		<tr>
+			<td>Coat for Halloween Costume</td>
+			<td>sewing and embroidery</td>
+			<td>2026</td>
+		</tr>
+		<tr>
+			<td>Drawing of Noelle Holiday</td>
+			<td>digital</td>
+			<td>2026</td>
+		</tr>
+	</table>
+</body>
+</html>
